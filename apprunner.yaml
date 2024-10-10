@@ -1,9 +1,8 @@
----
 version: 1.0
-runtime: python3.9  # or python3.9, depending on your requirements
+runtime: python3.9  # or python3.8
 build:
   commands:
     - pip install -r requirements.txt
 
 run:
-  command: python web.py
+  command: gunicorn -b 0.0.0.0:8000 app:app
