@@ -1,6 +1,6 @@
 ---
 version: 1.0
-runtime: python3.12  # or python3.9, depending on your requirements
+runtime: python3.11  # or python3.9, depending on your requirements
 build:
   commands:
     - pip install -r requirements.txt
